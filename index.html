@@ -1376,8 +1376,46 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
+        /* ========== RESPONSIVE STYLES ========== */
+
+        /* Large devices (desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1140px;
+            }
+        }
+
+        /* Medium devices (tablets, 768px to 1199px) */
+        @media (max-width: 1199.98px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero .lead {
+                font-size: 1.3rem;
+            }
+
+            .hero-image {
+                width: 350px;
+                height: 350px;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .download-cv {
+                right: 80px;
+            }
+        }
+
+        /* Small devices (landscape phones, 576px to 767px) */
+        @media (max-width: 767.98px) {
+            .hero {
+                text-align: center;
+                padding: 120px 0 60px;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -1386,19 +1424,22 @@
                 font-size: 1.2rem;
             }
 
+            .hero-image {
+                width: 280px;
+                height: 280px;
+                margin-top: 2rem;
+            }
+
             .section-title {
                 font-size: 2rem;
             }
 
-            .stat-number {
-                font-size: 2rem;
+            .about-img {
+                margin-bottom: 2rem;
             }
 
-            .back-to-top {
-                bottom: 20px;
-                right: 20px;
-                width: 45px;
-                height: 45px;
+            .stat-number {
+                font-size: 2.5rem;
             }
 
             .timeline::after {
@@ -1415,9 +1456,394 @@
                 left: 0;
             }
 
+            .timeline-item:nth-child(odd) .timeline-content::after,
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -10px;
+                right: auto;
+            }
+
             .download-cv {
                 right: 20px;
                 bottom: 100px;
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .whatsapp-popup {
+                width: 280px;
+                right: 20px;
+                bottom: 90px;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                left: 20px;
+                width: 45px;
+                height: 45px;
+                font-size: 1.3rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+
+            .service-card,
+            .skill-card,
+            .blog-card,
+            .certificate-card {
+                padding: 1.5rem;
+            }
+
+            .testimonial-card {
+                padding: 1.5rem;
+            }
+
+            .testimonial-card::before {
+                font-size: 3.5rem;
+                top: 5px;
+                left: 15px;
+            }
+
+            .portfolio-overlay h4 {
+                font-size: 1.2rem;
+            }
+
+            .filter-btn {
+                margin: 0.25rem;
+                padding: 0.4rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Extra small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            .hero {
+                padding: 100px 0 40px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .lead {
+                font-size: 1.1rem;
+            }
+
+            .hero-image {
+                width: 220px;
+                height: 220px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .section-title::after {
+                width: 60px;
+            }
+
+            .digitalize-text {
+                font-size: 2rem;
+            }
+
+            .loading-percentage {
+                font-size: 1.2rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 0.9rem;
+            }
+
+            .btn-primary-custom,
+            .btn-submit {
+                padding: 0.6rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .form-control {
+                padding: 0.6rem;
+            }
+
+            .contact-info {
+                padding: 1.5rem;
+            }
+
+            .modal-content {
+                width: 95%;
+            }
+
+            .modal-body {
+                padding: 1.5rem;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-popup {
+                width: 260px;
+                right: 10px;
+                bottom: 80px;
+            }
+
+            .whatsapp-popup-header {
+                padding: 0.8rem;
+            }
+
+            .whatsapp-popup-avatar {
+                width: 40px;
+                height: 40px;
+            }
+
+            .whatsapp-popup-info h5 {
+                font-size: 1rem;
+            }
+
+            .whatsapp-popup-info p {
+                font-size: 0.8rem;
+            }
+
+            .whatsapp-popup-body {
+                padding: 1rem;
+            }
+
+            .navbar {
+                padding: 0.8rem 0;
+            }
+
+            .navbar-toggler {
+                padding: 0.25rem 0.5rem;
+                font-size: 1rem;
+            }
+
+            .nav-link {
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            .social-links a {
+                font-size: 1.3rem;
+                margin: 0 0.5rem;
+            }
+
+            footer {
+                padding: 1.5rem 0;
+            }
+
+            .project-filter {
+                margin-bottom: 2rem;
+            }
+
+            .filter-btn {
+                display: block;
+                width: 100%;
+                margin: 0.25rem 0;
+            }
+
+            .portfolio-card img {
+                height: 250px;
+            }
+
+            .service-icon {
+                width: 70px;
+                height: 70px;
+            }
+
+            .service-icon i {
+                font-size: 2rem;
+            }
+
+            .blog-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .testimonial-author {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .testimonial-avatar {
+                width: 50px;
+                height: 50px;
+            }
+
+            .timeline-content {
+                padding: 15px 20px;
+            }
+
+            .certificate-image {
+                height: 180px;
+            }
+
+            .floating-shapes .shape {
+                display: none;
+            }
+        }
+
+        /* Very small devices (less than 400px) */
+        @media (max-width: 399.98px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero .lead {
+                font-size: 1rem;
+            }
+
+            .hero-image {
+                width: 180px;
+                height: 180px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .digitalize-text {
+                font-size: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .download-cv {
+                right: 15px;
+                bottom: 90px;
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .whatsapp-popup {
+                width: 240px;
+                right: 10px;
+            }
+
+            .back-to-top {
+                bottom: 15px;
+                left: 15px;
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+
+            .loading-screen,
+            .whatsapp-popup,
+            .whatsapp-float,
+            .download-cv,
+            .back-to-top,
+            .floating-shapes,
+            .scroll-progress,
+            .navbar,
+            footer {
+                display: none !important;
+            }
+
+            body {
+                color: #000;
+                background: #fff;
+            }
+
+            .hero {
+                background: #fff !important;
+                color: #000 !important;
+                min-height: auto;
+            }
+
+            .section-title::after {
+                background: #000;
+            }
+
+            .skill-card,
+            .service-card,
+            .portfolio-card,
+            .testimonial-card,
+            .blog-card,
+            .contact-info {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+
+        /* High DPI screens */
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
+            .hero-image {
+                border-width: 4px;
+            }
+        }
+
+        /* Reduced motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            .hero-image {
+                animation: none;
+            }
+
+            .typing-text {
+                animation: none;
+                border-right: none;
+                white-space: normal;
+                width: 100%;
+            }
+        }
+
+        /* Dark mode preference */
+        @media (prefers-color-scheme: dark) {
+            body:not(.light-mode) {
+                background-color: #0f172a;
+                color: #e2e8f0;
+            }
+
+            body:not(.light-mode) .navbar {
+                background: rgba(15, 23, 42, 0.95);
+            }
+
+            body:not(.light-mode) .hero {
+                background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            }
+
+            body:not(.light-mode) .about {
+                background: #1e293b;
+            }
+
+            body:not(.light-mode) .skill-card,
+            body:not(.light-mode) .service-card,
+            body:not(.light-mode) .portfolio-card,
+            body:not(.light-mode) .testimonial-card,
+            body:not(.light-mode) .blog-card,
+            body:not(.light-mode) .contact-info {
+                background: #334155;
+                color: #e2e8f0;
+            }
+
+            body:not(.light-mode) .form-control {
+                background: #334155;
+                color: #e2e8f0;
+                border-color: #475569;
+            }
+
+            body:not(.light-mode) footer {
+                background: #0f172a;
             }
         }
     </style>
